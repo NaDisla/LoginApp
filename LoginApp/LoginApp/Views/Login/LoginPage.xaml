@@ -31,27 +31,11 @@
                            HorizontalTextAlignment="Center"/>
 
                     <Entry Grid.Row="2"
-                           PlaceholderColor="#052A48"
-                           TextColor="#052A48"
-                           HorizontalOptions="CenterAndExpand"
-                           Margin="0,30,0,0"
-                           WidthRequest="345"
-                           FlexLayout.AlignSelf="Auto"
                            Placeholder="Usuario"
-                           FontAttributes="Bold"
-                           FontSize="16"
                            x:Name="txtUsuario"/>
 
                     <Entry Grid.Row="3"
-                           PlaceholderColor="#052A48"
-                           TextColor="#052A48"
-                           HorizontalOptions="CenterAndExpand"
-                           Margin="0,30,0,0"
-                           WidthRequest="345"
-                           FlexLayout.AlignSelf="Auto"
                            Placeholder="Contraseña"
-                           FontAttributes="Bold"
-                           FontSize="16"
                            x:Name="txtClave"
                            IsPassword="True"/>
 
@@ -68,7 +52,6 @@
                            CornerRadius="20"
                            BorderColor="White"
                            BorderWidth="2"
-                           Opacity="0.9"
                            x:Name="btnLogin"
                            Clicked="btnLogin_Clicked"/>
 

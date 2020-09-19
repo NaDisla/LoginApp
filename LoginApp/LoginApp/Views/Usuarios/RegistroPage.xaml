@@ -1,12 +1,68 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="LoginApp.Views.Usuarios.RegistroPage">
+             x:Class="LoginApp.Views.Usuarios.RegistroPage"
+             NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid BackgroundColor="LightBlue">
+            <FlexLayout Direction="Column" AlignItems="Center" AlignContent="SpaceBetween">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    
+                    <Frame BackgroundColor="DarkBlue" CornerRadius="20"
+                   BorderColor="White" Margin="90,15,90,0">
+                        <Label Text="Logo" TextColor="White" HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center" FontSize="20"/>
+                    </Frame>
+
+                    <Label Grid.Row="1" 
+                           Text="Registro"
+                           FontSize="Title"
+                           TextColor="DarkSlateBlue"
+                           Margin="0,20,0,0"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="Center"/>
+
+                    <Entry Grid.Row="2"
+                           Placeholder="Nombre completo"
+                           x:Name="txtNombreReal"/>
+
+                    <Entry Grid.Row="3"
+                           Placeholder="Nombre de usuario"
+                           x:Name="txtNombreUsuario"/>
+
+                    <Entry Grid.Row="4"
+                           Placeholder="Contraseña"
+                           x:Name="txtClaveRegistro"
+                           IsPassword="True"/>
+
+                    <Button Grid.Row="5" 
+                           Text="Registrarme"
+                           FontAttributes="Bold"
+                           TextColor="White"
+                           BackgroundColor="#8DC63D"
+                           FontSize="18"
+                           HorizontalOptions="CenterAndExpand"
+                           Margin="0,30,0,0"
+                           FlexLayout.AlignSelf="Auto"
+                           Padding="30,0,30,0"
+                           CornerRadius="20"
+                           BorderColor="White"
+                           BorderWidth="2"
+                           x:Name="btnRegistroUser"
+                          Clicked="btnRegistroUser_Clicked"/>
+                </Grid>
+
+            </FlexLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
